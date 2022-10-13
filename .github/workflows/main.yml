@@ -27,6 +27,6 @@ jobs:
     - uses: actions/setup-node@v2
       with:
         node-version: '14'
-    - run: npm i -g snyk-pnpm-deptree-api-tool
+    - run: npm i -g akanchha-snyk-pnpm-deptree-api-tool
     - run: npm i -g snyk
-    - run: snyk-pnpm-deptree-api-tool --root ./ -orgId snyk-policy-file-workshop --snykToken ${{ secrets.SNYK_TOKEN }}
+    - run: akanchha-snyk-pnpm-deptree-api-tool --root ./ -orgId snyk-policy-file-workshop --snykToken ${{ secrets.SNYK_TOKEN }} --monitor
