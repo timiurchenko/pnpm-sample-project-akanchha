@@ -25,4 +25,4 @@ jobs:
         node-version: '14'
     - run: npm i -g akanchha-snyk-pnpm-deptree-api-tool
     - run: npm i -g snyk
-    - run: akanchha-snyk-pnpm-deptree-api-tool --root ./ -orgId app4-team --snykToken ${{ secrets.SNYK_TOKEN }} --monitor
+    - run: akanchha-snyk-pnpm-deptree-api-tool --root ./ --orgId 17588657-5f48-41b9-a3e5-e6fa7355ee4d --snykToken ${{ secrets.SNYK_TOKEN }} --monitor
